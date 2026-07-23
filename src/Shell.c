@@ -77,6 +77,8 @@ void mainloop(void){
 					exit_from_thalsh(input, command, args);
 					continue;
 				}
+				args = tmp_args;
+				capacity *= 2;
 
 			}
 			
