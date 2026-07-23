@@ -10,7 +10,7 @@
 struct Builtin {
 	char* name;
 	int (*program)(char** args);
-}
+};
 
 extern int should_run;
 extern int exit_status;
@@ -20,3 +20,5 @@ int builtin_cd(char** args);
 int builtin_export(char** args);
 int builtin_unset(char** args);
 int builtin_exit(char** args);
+
+void exit_from_thalsh(char* input, char* command, char** args);
